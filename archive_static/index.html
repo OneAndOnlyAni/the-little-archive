@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Little Archive</title>
+  <link rel="stylesheet" href="static/style.css">
+  <script src="static/script.js" defer></script>
+</head>
+<body>
+  <div class="grain"></div>
+  <main>
+    <section id="entrance" class="screen entrance">
+      <div class="moon">☾</div>
+      <p class="kicker">A SMALL PLACE FOR LITTLE WONDERS</p>
+      <h1>The Little<br><em>Archive</em></h1>
+      <p class="intro">Somewhere between a memory and a dream,<br>there is a door waiting to be opened.</p>
+      <button id="enterButton" class="primary">Open the Archive <span>↗</span></button>
+      <p class="tiny-note">Best explored slowly, with a little curiosity.</p>
+    </section>
+
+    <section id="welcome" class="screen welcome hidden">
+      <p class="kicker">THE DOOR IS OPEN</p>
+      <div class="welcome-icon">🕯️</div>
+      <h1>Well, hello<br><em>there.</em></h1>
+      <p class="intro">The library has been waiting for a visitor.<br>Take a look around. There are a few things tucked away.</p>
+      <button id="continueButton" class="primary">Enter the library <span>→</span></button>
+    </section>
+
+    <section id="library" class="screen library hidden">
+      <header class="library-header">
+        <p class="kicker">THE LITTLE ARCHIVE · ROOM 01</p>
+        <h1>The Forgotten <em>Library</em></h1>
+        <p class="intro">Every little thing has a story. Choose one to begin.</p>
+      </header>
+      <div class="card-grid">
+        <button class="archive-card" data-item="book"><span class="icon">📖</span><h2>The Little Book</h2><p>A story waiting to be discovered.</p><span class="label">OPEN BOOK ↗</span></button>
+        <button class="archive-card" data-item="cat"><span class="icon">🐈</span><h2>The Cat Librarian</h2><p>A tiny guardian with a secret.</p><span class="label">SAY HELLO ↗</span></button>
+        <button class="archive-card" data-item="flower"><span class="icon">🌷</span><h2>The Pressed Flower</h2><p>A small reminder to notice the good.</p><span class="label">DISCOVER ↗</span></button>
+        <button class="archive-card" data-item="drawer"><span class="icon">🗝️</span><h2>The Secret Drawer</h2><p>A four-digit mystery awaits.</p><span class="label">UNLOCK ↗</span></button>
+        <button class="archive-card" data-item="stars"><span class="icon">✨</span><h2>The Star Room</h2><p>Collect five stars hidden in the night.</p><span class="label">PLAY ↗</span></button>
+        <button class="archive-card" data-item="letter"><span class="icon">✉️</span><h2>A Little Letter</h2><p>A birthday wish, folded with care.</p><span class="label">READ ↗</span></button>
+      </div>
+      <p class="footer">No rush. Stay a little. ☾</p>
+    </section>
+  </main>
+
+  <div id="modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="paper">
+      <button id="closeModal" class="close" aria-label="Close">×</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+</body>
+</html>
